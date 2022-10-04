@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import React from "react";
 import Header from "./components/Header.js";
 import NotesListPage from "./pages/NotesListPage";
@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-primary w-full overflow-hidden">
       <Header />
       <BrowserRouter>
         <Routes>
