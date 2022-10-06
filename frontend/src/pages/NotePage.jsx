@@ -18,7 +18,7 @@ const NotePage = () => {
 
   return (
     <div>
-      <p>{note.body}</p>
+      <textarea defaultValue={note.body}></textarea>
     </div>
   );
 };

@@ -7,13 +7,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-pink-600">
+    <div className="container">
       <BrowserRouter>
       <Header />
+      <div className="justify-center">
         <Routes>
           <Route path="/" element={<NotesListPage />} />
           <Route path="/note/:id" element={<NotePage />} />
         </Routes>
+      </div>
       </BrowserRouter>
     </div>
   );
