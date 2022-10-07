@@ -32,10 +32,10 @@ def updateNote(request, pk):
     if serializer.is_valid():
         serializer.save()
 
-    return serializer.data
+    return Response(serializer.data)
 
 
 def deleteNote(request, pk):
     note = Note.objects.get(id=pk)
     note.delete()
-    return Response('Note was deleted!')
+    return Response('Note was deleted')
