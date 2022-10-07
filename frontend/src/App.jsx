@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex w-screen h-screen">
       <BrowserRouter>
-        <div className="app align-middle border-gray-700 border-[1px]">
+        <div className="app align-middle">
           <Header />
           <Routes>
             <Route path="/" element={<NotesListPage />} />
