@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
+      <h1>hi cxinu,ilu</h1>
       <BrowserRouter>
       {/* <Header /> */}
       <Body/>
