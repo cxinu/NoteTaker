@@ -60,7 +60,7 @@ const Body = () => {
               </div>
               <div className="md:w-60 w-28 h-60 md:h-96  overflow-hidden rounded-xl">
                 <img
-                  src="https://source.unsplash.com/200x400/?bikini"
+                  src="https://source.unsplash.com/200x400/?fountain"
                   className="h-full w-full"
                   alt=""
                 />
