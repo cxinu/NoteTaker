@@ -10,7 +10,7 @@ function App() {
     <div className="container">
       <BrowserRouter>
       <Header />
-      <div className="justify-center">
+      <div className="w-screen h-screen">
         <Routes>
           <Route path="/" element={<NotesListPage />} />
           <Route path="/note/:id" element={<NotePage />} />
