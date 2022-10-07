@@ -10,6 +10,7 @@ def getNotesList(request):
 
 
 def getNoteDetail(request, pk):
+    if pk == "new": return Response("")
     notes = Note.objects.get(id=pk)
     serializer = NoteSerializer(notes, many=False)
     return Response(serializer.data)
@@ -36,6 +37,7 @@ def updateNote(request, pk):
 
 
 def deleteNote(request, pk):
+    if pk == "new": return Response('Deleted New Note')
     note = Note.objects.get(id=pk)
     note.delete()
     return Response('Note was deleted')
