@@ -7,15 +7,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="container">
+    <div className="flex w-screen h-screen">
       <BrowserRouter>
-      <Header />
-      <div className="w-screen h-screen">
-        <Routes>
-          <Route path="/" element={<NotesListPage />} />
-          <Route path="/note/:id" element={<NotePage />} />
-        </Routes>
-      </div>
+        <div className="app align-middle border-gray-700 border-[1px]">
+          <Header />
+          <Routes>
+            <Route path="/" element={<NotesListPage />} />
+            <Route path="/note/:id" element={<NotePage />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
