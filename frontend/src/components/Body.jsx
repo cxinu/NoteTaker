@@ -60,7 +60,7 @@ const Body = () => {
               </div>
               <div className="md:w-60 w-28 h-60 md:h-96  overflow-hidden rounded-xl">
                 <img
-                  src="https://source.unsplash.com/200x400/?bikini"
+                  src="https://source.unsplash.com/200x400/?library"
                   className="h-full w-full"
                   alt=""
                 />
@@ -89,9 +89,9 @@ const Body = () => {
             </div>
            
           </div>
-          <div className="justify-centre text-white mx-14 my-40 text-align-center items-center">
-            <button>Create Notes</button>
-          </div>
+          {/* <div className="justify-centre text-white mx-14 my-40 text-align-center items-center"> */}
+            <button className="justify-centre text-white mx-14 my-40 text-align-center items-center">Create Notes</button>
+          {/* </div> */}
           
         </div>
       </div>
