@@ -1,3 +1,4 @@
+from msilib.schema import Error
 from rest_framework.response import Response
 from .models import Note
 from .serializers import NoteSerializer
@@ -18,6 +19,8 @@ def getNoteDetail(request, pk):
 
 def createNote(request):
     data = request.data
+    if data == str(''):
+        return Response('Cancelled createNote')
     note = Note.objects.create(
         body=data['body']
     )
